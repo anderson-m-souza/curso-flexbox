@@ -1,0 +1,21 @@
+/* para deixar o menu ao lado do
+logo, selecionamos o pai desses
+dois elementos */
+.cabecalhoPrincipal .container {
+    /* habilitando o flexbox */
+    display: flex;
+    /*alinhando os elementos
+    filhos ao centro */
+    align-items: center;
+    /* cada elemento deve ficar em
+    um canto da tela, ou seja, o
+    espaco que sobrar na linha,
+    ficara entre os elementos */
+    justify-content: space-between;
+}
+
+/* selecionando o pai dos itens do
+menu, para deixa-los lado a lado */
+.cabecalhoPrincipal-nav {
+    display: flex;
+}
