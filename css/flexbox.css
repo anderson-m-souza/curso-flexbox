@@ -19,3 +19,62 @@ menu, para deixa-los lado a lado */
 .cabecalhoPrincipal-nav {
     display: flex;
 }
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    /* antes de justificar o conteudo,
+    sera necessario colocar o espaco
+    no qual esse conteudo vai ficar */
+    width: 60%;
+    /* uma margem a direita, para a
+    lista nao ficar grudada no form */
+    margin-right: 5%;
+    /* a propriedade space-around
+    dividide igualmente o espaco
+    disponivel entre margens dos
+    elementos */
+    justify-content: space-around;
+}
+
+.rodapePrincipal-contatoForm {
+    /* fazendo com que o form ocupe os
+    35% restantes no container do rodape
+    dos patrocinadores*/
+    width: 30%;
+    /* margem a esquerda, pois se fosse a
+    direita, os 5% desta seriam somados
+    ao que restasse a direita do bloco,
+    ja que o elemento se ajusta a esquerda do espaco disponivel */
+    margin-left: 5%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    /* colocando botao ao lado e com o
+    mesmo tamanho do input*/
+    display: flex;
+
+}
+
+/* apos envolver cada lista em uma tag ul */
+.navmap-list {
+    display: flex;
+    /* mundando a direcao padrao do conteudo
+    da lista de linha (row), para coluna
+    (colunm), pois as tags de links (<a>)
+    tem comportamento inline */
+    flex-direction: column;
+}
+
+.rodapePrincipal-navMap-list {
+    /* deixando as listas lado a lado */
+    display: flex;
+    /* colocando margens automaticas entre
+    as listas */
+    justify-content: space-between;
+}
