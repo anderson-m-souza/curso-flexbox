@@ -76,5 +76,14 @@ menu, para deixa-los lado a lado */
     display: flex;
     /* colocando margens automaticas entre
     as listas */
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+}
+
+.conteudoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
 }

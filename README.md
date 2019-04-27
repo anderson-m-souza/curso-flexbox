@@ -2,6 +2,8 @@
 
 Repositorio para o curso de flexbox da Alura.
 
+O curso tem como objetivo utilizar o flexbox em uma pagina ja pronta (fornecida pelo instrutor), para deixa-la responsiva.
+
 
 Aula 1
 
@@ -60,3 +62,27 @@ Flex-flow agrega o conjunto
 flex-direction:
 flex-wrap:
 respectivamente.
+
+Aula 3
+
+Teve como objetivo organizar o grid de cursos em 4 colunas.
+
+A forma como o professor implementou o layout continha um passo a mais, no qual foi necessario utilizar:
+
+.conteudoPrincipal-cursos-links {
+    width: 23%;
+    /* margem em todos itens, pois o justify-content nao funciona para linhas com menos que 4 itens */
+    margin: 1%
+}
+
+/* correcao das margens direitas dos itens do canto direito */
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+/*correcao das margens esquerdas dos itens do canto esquerdo */
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+    margin-right: 0;
+}
+
+Isso nao foi necessario na pratica, pois o codigo inicial fornecido ja continha media queries que corrigiam esse problema no arquivo style.css.
