@@ -1,6 +1,7 @@
 # curso-flexbox
 
 Repositorio para o curso de flexbox da Alura.
+https://cursos.alura.com.br/course/posicione-elementos-com-flexbox
 
 O curso tem como objetivo utilizar o flexbox em uma pagina ja pronta (fornecida pelo instrutor), para deixa-la responsiva.
 
@@ -73,7 +74,7 @@ A forma como o professor implementou o layout continha um passo a mais, no qual 
 
 .conteudoPrincipal-cursos-links {
     width: 23%;
-    
+
     /* margem em todos itens, pois o justify-content nao funciona para linhas com menos que 4 itens */
     margin: 1%
 }
@@ -103,3 +104,14 @@ O flex-grow recebe um valor que sera interpretado como uma fracao do espaco rest
 As logos respondem corretamente no chrome, mas no firefox o logo "casa do codigo" fica metade pra fora do layout, ocasionando uma barra de scroll horizontal.
 
 Alem disso, nao deu certo colocar justify-content: center; no .rodapePrincipal-contatoForm-fieldset como na aula. O elemento nao fica centralizado.
+
+
+Aula 5
+
+Com o projeto finalizado a ultima aula serviu como uma revisao do conteudo, apresentacao de mais duas propriedades e de dois jogos para praticar flexbox.
+
+As propriedades sao flex-basis, que funciona como o width, e flex, que recebe como parametros valores para flex-grow, flex-shrink e flex-basis respectivamente.
+
+Se forem colocadas apenas dois numeros, eles serao flex-grow e flex-shrink.
+
+Os jogos sao Flexbox Froggy (https://flexboxfroggy.com/) e Flexbox Defense (http://www.flexboxdefense.com/).
