@@ -50,7 +50,8 @@ menu, para deixa-los lado a lado */
     /* margem a esquerda, pois se fosse a
     direita, os 5% desta seriam somados
     ao que restasse a direita do bloco,
-    ja que o elemento se ajusta a esquerda do espaco disponivel */
+    ja que o elemento se ajusta a esquerda
+    do espaco disponivel */
     margin-left: 5%;
 }
 
@@ -66,17 +67,14 @@ menu, para deixa-los lado a lado */
     display: flex;
     /* mundando a direcao padrao do conteudo
     da lista de linha (row), para coluna
-    (colunm), pois as tags de links (<a>)
-    tem comportamento inline */
+    (colunm) */
     flex-direction: column;
 }
 
 .rodapePrincipal-navMap-list {
     /* deixando as listas lado a lado */
     display: flex;
-    /* colocando margens automaticas entre
-    as listas */
-    /*justify-content: space-between;*/
+    justify-content: space-between;
 }
 
 .conteudoPrincipal-cursos {
@@ -86,4 +84,118 @@ menu, para deixa-los lado a lado */
 
 .conteudoPrincipal-cursos-link {
     width: 23%;
+}
+
+.videoSobre .container {
+    /* video e sobre lado a lado */
+    display: flex;
+    /* colocando espacamento */
+    justify-content: space-between;
+}
+
+.videoSobre-sobre-list {
+    /* aumentando a altura do texto Para
+    que este ocupe todo o espaco restante
+    e empurre o botao para baixo */
+    flex-grow: 1;
+}
+
+.videoSobre-sobre {
+    /* para deixar todos os elementos
+    em coluna, assim igualando suas
+    larguras, e fazendo com que o botao
+    ocupe todo o espaco */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* aumentando o espaco dado a descricao
+    do video */
+    flex-grow: 2;
+    /* o video deve diminuir duas vezes mais
+    do que todos os itens da pagina, conforme
+    a pagina for encolhida */
+    flex-shrink: 2;
+}
+
+/* "videoSobre-video" e "videoSobre-sobre"
+ocuparao respectivamente 1 e 2 partes de 3
+do espaco disponivel entre eles */
+.videoSobre-video {
+    flex-grow: 1;
+}
+
+
+/*----------------mobile---------------*/
+
+@media(max-width: 768px) {
+
+    .cabecalhoPrincipal-nav {
+        display: flex;
+        /* em primeiro lugar, empilha-se o
+        conteudo do menu */
+        flex-direction: column;
+    }
+
+    .cabecalhoPrincipal .container {
+        display: flex;
+        /* colocando "alurinha"
+        e menu empilhados */
+        flex-direction: column;
+        /* o alinhamento dos itens agora que
+        o container esta em colunas
+        centraliza-os horizontalmente,entao
+        é necessario setar para o valor
+        inicial */
+        align-items: initial;
+        /* centralizando o texto normalmente */
+        text-align: center;
+    }
+
+    .conteudoPrincipal-cursos {
+        /* os cursos devem estar empilhados */
+        flex-direction: column;
+    }
+
+    .conteudoPrincipal-cursos-link {
+        /* ocupando toda a largura da tela */
+        width: 100%;
+    }
+
+
+    .rodapePrincipal-navMap-list {
+        /* colocar as listas do mapa de cursos
+        empilhadas */
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-patrocinadores .container{
+        /* empilhar ul de logos com form */
+        flex-direction: column;
+
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        /* ocupar a largura toda da pagina */
+        width: 100%;
+        /* retirar margens */
+        margin: 0;
+    }
+
+    .cabecalhoPrincipal-nav-link-app {
+        /* colocando o link para o app antes
+        dos outros links, trocando o padrao
+        do order de 0 para -1, lembrando que
+        essa propriedade deve ficar no item, e
+        nao no pai */
+        order: -1;
+    }
+
+    .videoSobre .container {
+        flex-direction: column;
+    }
+
+    .videoSobre-video {
+        /* centralizando o video */
+        margin: 0 auto;
+    }
 }

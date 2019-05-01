@@ -28,6 +28,8 @@ Assim, os patrocinadores ficaram com 65% do container, e o formulario com 35%. E
 
 Apesar dos ajustes pessoais, a simetria continua melhor no chrome.
 
+Ao colocar display: flex; em um container, seus filhos ficam com a mesma altura (quando lado a lado), ou mesma largura (quando empilhados).
+
 O segundo objetivo foi posicionar as listas de cursos em colunas, uma ao lado da outra.
 
 Diferentemente do professor, que nao envolveu cada lista em uma tag, eu assim o fiz, pois ele setou a altura do Mapa de Cursos em pixels, com medida da maior lista, para que quando a lista nao coubesse mais, houvesse uma quebra de coluna.
@@ -86,3 +88,15 @@ A forma como o professor implementou o layout continha um passo a mais, no qual 
 }
 
 Isso nao foi necessario na pratica, pois o codigo inicial fornecido ja continha media queries que corrigiam esse problema no arquivo style.css.
+
+Aula 4
+
+A quarta aula foca no desenvolvimento mobile, utilizando as ferramentas de desenvolvedor do browser. E no ajuste do video na parte desktop.
+
+Isso é feito principalmente atraves do empilhamento dos itens, ajuste de largura, mudanca na ordem dos itens.
+
+O flex-grow recebe um valor que sera interpretado como uma fracao do espaco restante do seu pai, e fara com que o item que recebe essa propriedade ocupe essa fracao. Ver classes videoSobre-video e videoSobre-sobre no arquivo flexbox.css para ver na pratica.
+
+As logos respondem corretamente no chrome, mas no firefox o logo "casa do codigo" fica metade pra fora do layout, ocasionando uma barra de scroll horizontal.
+
+Alem disso, nao deu certo colocar justify-content: center; no .rodapePrincipal-contatoForm-fieldset como na aula. O elemento nao fica centralizado.
