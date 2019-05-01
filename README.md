@@ -73,16 +73,19 @@ A forma como o professor implementou o layout continha um passo a mais, no qual 
 
 .conteudoPrincipal-cursos-links {
     width: 23%;
+    
     /* margem em todos itens, pois o justify-content nao funciona para linhas com menos que 4 itens */
     margin: 1%
 }
 
 /* correcao das margens direitas dos itens do canto direito */
+
 .conteudoPrincipal-cursos-link:nth-child(4n+1) {
     margin-left: 0;
 }
 
 /*correcao das margens esquerdas dos itens do canto esquerdo */
+
 .conteudoPrincipal-cursos-link:nth-child(4n) {
     margin-right: 0;
 }
